@@ -19,7 +19,6 @@ fn test_sum_of_multiples() {
     assert_eq!(sum_of_multiples(3, 10) + sum_of_multiples(5, 10), 23);
 }
 
-
 // The gaussian formula to calculate the sum of numbers from 0 to n
 fn gauss(n: u64) -> u64 {
     n * (n + 1) / 2
@@ -31,7 +30,6 @@ fn test_gauss() {
     assert_eq!(gauss((10 - 1) / 3) * 3, 18);
     assert_eq!(gauss((10 - 1) / 5) * 5, 5);
 }
-
 
 // The faster way to calculate the sum of multiples
 fn sum_of_multiples_two_numbers(a: u64, b: u64, limit: u64) -> u64 {
@@ -53,5 +51,8 @@ fn test_sum_of_multiples_two_numbers() {
 }
 
 fn main() {
-    println!("Sum of all the multiples of 3 or 5 below 1000 is: {}", sum_of_multiples_two_numbers(3, 5, 1000));
+    println!(
+        "Sum of all the multiples of 3 or 5 below 1000 is: {}",
+        sum_of_multiples_two_numbers(3, 5, 1000)
+    );
 }

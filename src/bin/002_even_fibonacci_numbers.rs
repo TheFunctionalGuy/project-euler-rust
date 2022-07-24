@@ -30,5 +30,9 @@ fn test_sum_even_fibonacci_numbers() {
 
 fn main() {
     let limit = 4_000_000;
-    println!("The sum of all even-valued fibonacci terms below {} is: {}", limit, sum_even_fibonacci_numbers(limit));
+    println!(
+        "The sum of all even-valued fibonacci terms below {} is: {}",
+        limit,
+        sum_even_fibonacci_numbers(limit)
+    );
 }
